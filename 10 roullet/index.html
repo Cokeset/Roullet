@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roulette</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/probabilities.css">
+  <link rel="stylesheet" href="css/hotcoldnumber.css">
+</head>
+<body>
+  <input id="numbers" type="tel" value="" autofocus />
+  <button type="button" id="makeNumber">play</button>
+  <p id="time"></p>
+  <button type="button" id="full-screen">Full Screen</button>
+
+
+
+  <div class="ratio-bars">
+    <h1 class="main-title">¥1 ROULETTE</h1>
+
+    <div class="hotNumber">
+      <div>
+        <header class="hotheader">HOT</header>
+
+        <h1 id="hot1"></h1>
+        <h2 id="hot2"></h2>
+        <h2 id="hot3"></h2>
+        <h2 id="hot4"></h2>
+        <h2 id="hot5"></h2>
+
+        <p id="h1count"></p>
+        <p id="h2count"></p>
+        <p id="h3count"></p>
+        <p id="h4count"></p>
+        <p id="h5count"></p>
+      </div>
+    </div>
+
+    <div class="rgbRatio">
+      <header>RED/BLACK</header>
+      <div class="colorsRatio">
+        <div class="redRatio"></div>
+        <div class="greenRatio"></div>
+        <div class="blackRatio"></div>
+      </div>
+      <div class="colorRatioNumber">
+        <p class="redRatioNumber"></p>
+        <p class="greenRatioNumber"></p>
+        <p class="blackRatioNumber"></p>
+      </div>
+    </div>
+
+    <div class="coldNumber">
+      <div>
+        <header class="coldheader">COLD</header>
+        <h1 id="cold1"></h1>
+        <h2 id="cold2"></h2>
+        <h2 id="cold3"></h2>
+        <h2 id="cold4"></h2>
+        <h2 id="cold5"></h2>
+
+        <p id="c1count"></p>
+        <p id="c2count"></p>
+        <p id="c3count"></p>
+        <p id="c4count"></p>
+        <p id="c5count"></p>
+      </div>
+    </div>
+
+    <div class="highLowRatio">
+      <header>HIGH/LOW</header>
+      <div class="highLowRatioBar">
+        <div class="highRatio"></div>
+        <div class="greenRatio"></div>
+        <div class="lowRatio"></div>
+      </div>
+      <div class="highLowRatioNumber">
+        <p class="highRatioNumber"></p>
+        <p class="greenRatioNumber"></p>
+        <p class="lowRatioNumber"></p>
+      </div>
+    </div>
+
+    <div class="columnRatio">
+      <header>COLUMN(1-34/2-35/3-36)</header>
+      <div class="columnRatioBar">
+        <div class="lowerRatio"></div>
+        <div class="middleRatio"></div>
+        <div class="upperRatio"></div>
+        <div class="greenRatio"></div>
+      </div>
+      <div class="columnRatioNumber">
+        <p class="lowerRatioNumber"></p>
+        <p class="middleRatioNumber"></p>
+        <p class="upperRatioNumber"></p>
+        <p class="greenRatioNumberUndisplay"></p>
+      </div>
+    </div>
+
+    <div class="oddEvenRatio">
+      <header>ODD/EVEN</header>
+      <div class="oddEvenRatioBar">
+        <div class="oddRatio"></div>
+        <div class="greenRatio"></div>
+        <div class="evenRatio"></div>
+      </div>
+      <div class="oddEvenRatioNumber">
+        <p class="oddRatioNumber"></p>
+        <p class="greenRatioNumber"></p>
+        <p class="evenRatioNumber"></p>
+      </div>
+    </div>
+
+    <div class="dozenRatio">
+      <header>DOZEN(1st/2nd/3rd)</header>
+      <div class="dozenRatioBar">
+        <div class="firstRatio"></div>
+        <div class="secondRatio"></div>
+        <div class="thirdRatio"></div>
+        <div class="greenRatio"></div>
+      </div>
+      <div class="dozenRatioNumber">
+        <p class="firstRatioNumber"></p>
+        <p class="secondRatioNumber"></p>
+        <p class="thirdRatioNumber"></p>
+        <p class="greenRatioNumberUndisplay"></p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="numberhistory">
+    <div class="red">
+      <div id="red1">N</div>
+      <div id="red2"></div>
+      <div id="red3"></div>
+      <div id="red4">R</div>
+      <div id="red5"></div>
+      <div id="red6">u</div>
+      <div id="red7">l</div>
+      <div id="red8">e</div>
+      <div id="red9">t</div>
+      <div id="red10">t</div>
+      <div id="red11">e,</div>
+      <div id="red12"></div>
+      <div id="red13"></div>
+      <div id="red14"></div>
+      <div id="red15"></div>
+    </div>
+    <div class="green">
+      <div id="green1"></div>
+      <div id="green2">0</div>
+      <div id="green3"></div>
+      <div id="green4"></div>
+      <div id="green5">0</div>
+      <div id="green6"></div>
+      <div id="green7"></div>
+      <div id="green8"></div>
+      <div id="green9"></div>
+      <div id="green10">0</div>
+      <div id="green11"></div>
+      <div id="green12"></div>
+      <div id="green13"></div>
+      <div id="green14"></div>
+      <div id="green15"></div>
+    </div>
+    <div class="black">
+      <div id="black1"></div>
+      <div id="black2"></div>
+      <div id="black3"></div>
+      <div id="black4"></div>
+      <div id="black5"></div>
+      <div id="black6"></div>
+      <div id="black7"></div>
+      <div id="black8"></div>
+      <div id="black9">N</div>
+      <div id="black10"></div>
+      <div id="black11"></div>
+      <div id="black12">L</div>
+      <div id="black13">I</div>
+      <div id="black14">F</div>
+      <div id="black15">E</div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p class="copyright">&copy;KidaTatsuya 2019</p>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/simulation.js" defer></script>
+</body>
+</html>

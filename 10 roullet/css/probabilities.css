@@ -1,0 +1,272 @@
+/* colors */
+.rgbRatio {
+  background-color: silver;
+  border-radius: 5vw;
+  width: 40vw;
+  padding: 1vh 2vw;
+  box-shadow: inset 0 0 10px 5px gold;
+  }
+
+.colorsRatio {
+  display: flex;
+  height: 6vh;
+}
+.redRatio {
+  flex: 50;
+  background-color: #8f2e14;
+}
+.greenRatio {
+  flex: 0;
+  background-color: green;
+}
+.blackRatio {
+  flex: 50;
+  background-color: #16160e;
+}
+
+.colorRatioNumber {
+  height: 2vh;
+  font-size: 1.5vh;
+  background-color: rgba(33, 39, 98, 0.0);
+  display: flex;
+  color: black;
+  font-weight: 600;
+}
+.redRatioNumber {
+  flex: 50;
+  text-align: left;
+  margin: 0;
+}
+.greenRatioNumber {
+  flex: 0;
+  text-align: center;
+  margin: 0;
+}
+.blackRatioNumber {
+  flex: 50;
+  text-align: right;
+  margin: 0;
+}
+
+
+/* column */
+.columnRatio {
+  background-color: silver;
+  border-radius: 5vw;
+  width: 40vw;
+  padding: 1vh 2vw;
+  box-shadow: inset 0 0 10px 5px gold;
+  }
+
+.columnRatioBar {
+  display: flex;
+  height: 6vh;
+}
+.upperRatio {
+  flex: 33;
+  background-color: lightcyan;
+}
+/* .greenRatio {
+  flex: 0;
+  background-color: green;
+} */
+.middleRatio {
+  flex: 33;
+  background-color: lightseagreen;
+}
+.lowerRatio {
+  flex: 34;
+  background-color: darkcyan;
+}
+
+.columnRatioNumber {
+  height: 2vh;
+  font-size: 1.5vh;
+  background-color: rgba(33, 39, 98, 0.0);
+  display: flex;
+  color: black;
+  font-weight: 600;
+}
+.upperRatioNumber {
+  flex: 50;
+  text-align: center;
+  margin: 0;
+}
+.middleRatioNumber {
+  flex: 50;
+  text-align: center;
+  margin: 0;
+}
+.lowerRatioNumber {
+  flex: 50;
+  text-align: center;
+  margin: 0;
+}
+.greenRatioNumberUndisplay {
+  flex: 0;
+  margin: 0;
+}
+
+
+
+/* dozen */
+.dozenRatio {
+  background-color: silver;
+  border-radius: 5vw;
+  width: 40vw;
+  padding: 1vh 2vw;
+  box-shadow: inset 0 0 10px 5px gold;
+  }
+
+.dozenRatioBar {
+  display: flex;
+  height: 6vh;
+}
+.firstRatio {
+  flex: 33;
+  background-color: teal;
+}
+/* .greenRatio {
+  flex: 0;
+  background-color: green;
+} */
+.secondRatio {
+  flex: 33;
+  background-color: cadetblue;
+}
+.thirdRatio {
+  flex: 34;
+  background-color: paleturquoise;
+}
+
+.dozenRatioNumber {
+  height: 2vh;
+  font-size: 1.5vh;
+  background-color: rgba(33, 39, 98, 0.0);
+  display: flex;
+  color: black;
+  font-weight: 600;
+}
+.firstRatioNumber {
+  flex: 50;
+  text-align: center;
+  margin: 0;
+}
+.secondRatioNumber {
+  flex: 50;
+  text-align: center;
+  margin: 0;
+}
+.thirdRatioNumber {
+  flex: 50;
+  text-align: center;
+  margin: 0;
+}
+.greenRatioNumberUndisplay {
+  flex: 0;
+  margin: 0;
+}
+
+
+
+/* highLow */
+.highLowRatio {
+  background-color: silver;
+  border-radius: 5vw;
+  width: 40vw;
+  padding: 1vh 2vw;
+  box-shadow: inset 0 0 10px 5px gold;
+  }
+
+.highLowRatioBar {
+  display: flex;
+  height: 6vh;
+}
+.highRatio {
+  flex: 50;
+  background-color: #b77b57;
+}
+/* .greenRatio {
+  flex: 0;
+  background-color: green;
+} */
+.lowRatio {
+  flex: 50;
+  background-color: #88b5d3;
+}
+
+.highLowRatioNumber {
+  height: 2vh;
+  font-size: 1.5vh;
+  background-color: rgba(33, 39, 98, 0.0);
+  display: flex;
+  color: black;
+  font-weight: 600;
+}
+.highRatioNumber {
+  flex: 50;
+  text-align: left;
+  margin: 0;
+}
+/* .greenRatioNumber {
+  flex: 0;
+  text-align: center;
+  margin: 0;
+} */
+.lowRatioNumber {
+  flex: 50;
+  text-align: right;
+  margin: 0;
+}
+
+
+
+/* oddEven */
+.oddEvenRatio {
+  background-color: silver;
+  border-radius: 5vw;
+  width: 40vw;
+  padding: 1vh 2vw;
+  box-shadow: inset 0 0 10px 5px gold;
+  }
+
+.oddEvenRatioBar {
+  display: flex;
+  height: 6vh;
+}
+.oddRatio {
+  flex: 50;
+  background-color: #b77b57;
+}
+/* .greenRatio {
+  flex: 0;
+  background-color: green;
+} */
+.evenRatio {
+  flex: 50;
+  background-color: #88b5d3;
+}
+
+.oddEvenRatioNumber {
+  height: 2vh;
+  font-size: 1.5vh;
+  background-color: rgba(33, 39, 98, 0.0);
+  display: flex;
+  color: black;
+  font-weight: 600;
+}
+.oddRatioNumber {
+  flex: 50;
+  text-align: left;
+  margin: 0;
+}
+/* .greenRatioNumber {
+  flex: 0;
+  text-align: center;
+  margin: 0;
+} */
+.evenRatioNumber {
+  flex: 50;
+  text-align: right;
+  margin: 0;
+}
